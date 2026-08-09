@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUSDC Token - Community-Driven BSC Token</title>
+    <meta name="description" content="FUSDC is a BEP-20 token on Binance Smart Chain. Trade FUSDC/USDT on PancakeSwap.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        h1 {
+            color: #667eea;
+            text-align: center;
+            font-size: 3em;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.2em;
+        }
+        .badge {
+            display: inline-block;
+            background: #4caf50;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin: 0 5px;
+        }
+        .contract-box {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            border-left: 4px solid #667eea;
+        }
+        .contract-label {
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 8px;
+        }
+        .contract-address {
+            font-family: 'Courier New', monospace;
+            word-break: break-all;
+            color: #333;
+            font-size: 0.95em;
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .copy-btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-size: 0.95em;
+            font-weight: bold;
+        }
+        .copy-btn:hover {
+            background: #5568d3;
+        }
+        h2 {
+            color: #667eea;
+            margin-top: 35px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 10px;
+            font-size: 1.8em;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .info-card {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            border: 2px solid transparent;
+            transition: border 0.3s;
+        }
+        .info-card:hover {
+            border-color: #667eea;
+        }
+        .info-card strong {
+            display: block;
+            color: #667eea;
+            font-size: 1.4em;
+            margin-bottom: 5px;
+        }
+        .info-card span {
+            color: #666;
+            font-size: 0.9em;
+        }
+        ul, ol {
+            margin-left: 25px;
+            margin-top: 10px;
+            line-height: 1.8;
+        }
+        ul li, ol li {
+            margin-bottom: 5px;
+        }
+        .links {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 25px;
+            border-top: 2px solid #f0f0f0;
+        }
+        .links a {
+            display: inline-block;
+            margin: 5px 8px;
+            padding: 12px 24px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .links a:hover {
+            background: #5568d3;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #999;
+            font-size: 0.9em;
+        }
+        .step-number {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 28px;
+            margin-right: 8px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>FUSDC</h1>
+        <p class="subtitle">
+            <span class="badge">BSC</span>
+            <span class="badge">BEP-20</span>
+            <span class="badge">Community-Driven</span>
+        </p>
+
+        <h2>Contract Address</h2>
+        <div class="contract-box">
+            <div class="contract-label">FUSDC Token (BSC):</div>
+            <div class="contract-address">0xYOUR_CONTRACT_ADDRESS_HERE</div>
+            <button class="copy-btn" onclick="navigator.clipboard.writeText('0xYOUR_CONTRACT_ADDRESS_HERE'); alert('Contract address copied!')">Copy Address</button>
+        </div>
+
+        <h2>About FUSDC</h2>
+        <p>FUSDC is a BEP-20 token deployed on the Binance Smart Chain. Our mission is to build a transparent, community-driven ecosystem that provides value to holders through [add your vision: innovation, community, meme culture, utility, etc.].</p>
+        <p style="margin-top: 15px;">FUSDC is paired with USDT (Tether) on PancakeSwap, providing a stable trading pair and clear price discovery for our community.</p>
+
+        <h2>Token Information</h2>
+        <div class="info-grid">
+            <div class="info-card">
+                <strong>1,000,000</strong>
+                <span>Total Supply</span>
+            </div>
+            <div class="info-card">
+                <strong>18</strong>
+                <span>Decimals</span>
+            </div>
+            <div class="info-card">
+                <strong>BEP-20</strong>
+                <span>Token Standard</span>
+            </div>
+            <div class="info-card">
+                <strong>USDT</strong>
+                <span>Trading Pair</span>
+            </div>
+        </div>
+
+        <h2>How to Buy FUSDC</h2>
+        <ol>
+            <li><span class="step-number">1</span>Install <strong>MetaMask</strong> or <strong>Trust Wallet</strong></li>
+            <li><span class="step-number">2</span>Add the <strong>Binance Smart Chain</strong> network to your wallet</li>
+            <li><span class="step-number">3</span>Get <strong>USDT</strong> (Tether) on BSC and send it to your wallet</li>
+            <li><span class="step-number">4</span>Go to <strong>PancakeSwap</strong></li>
+            <li><span class="step-number">5</span>Click "Import Token" and paste the FUSDC contract address above</li>
+            <li><span class="step-number">6</span>Swap your USDT for FUSDC</li>
+            <li><span class="step-number">7</span>Welcome to the FUSDC community! 🎉</li>
+        </ol>
+
+        <h2>Tokenomics</h2>
+        <ul>
+            <li><strong>Token Name:</strong> FUSDC</li>
+            <li><strong>Symbol:</strong> FUSDC</li>
+            <li><strong>Network:</strong> Binance Smart Chain (BSC)</li>
+            <li><strong>Token Standard:</strong> BEP-20</li>
+            <li><strong>Total Supply:</strong> 1,000,000 FUSDC</li>
+            <li><strong>Decimals:</strong> 18</li>
+            <li><strong>Trading Pair:</strong> FUSDC/USDT</li>
+            <li><strong>DEX:</strong> PancakeSwap</li>
+            <li><strong>Buy Tax:</strong> 0%</li>
+            <li><strong>Sell Tax:</strong> 0%</li>
+        </ul>
+
+        <h2>Roadmap</h2>
+        <ul>
+            <li>✅ Smart contract deployed on BSC</li>
+            <li>✅ Contract verified on BscScan</li>
+            <li>✅ Liquidity pool created (USDT/FUSDC)</li>
+            <li>✅ Official website launched</li>
+            <li>🔄 Community building and marketing</li>
+            <li>🔄 Trust Wallet listing submission</li>
+            <li>🔄 CoinGecko and CoinMarketCap listings</li>
+            <li>🔄 Ecosystem development and partnerships</li>
+        </ul>
+
+        <h2>Security & Transparency</h2>
+        <ul>
+            <li>✅ Contract source code verified on BscScan</li>
+            <li>✅ No owner mint function (fixed supply)</li>
+            <li>✅ No blacklist or pause functions</li>
+            <li>✅ No hidden taxes or fees</li>
+            <li>✅ Liquidity locked [or "to be locked"]</li>
+        </ul>
+
+        <div class="links">
+            <a href="https://bscscan.com/address/0xYOUR_CONTRACT_ADDRESS_HERE" target="_blank">View on BscScan</a>
+            <a href="https://pancakeswap.finance/swap?outputCurrency=0xYOUR_CONTRACT_ADDRESS_HERE&inputCurrency=0x55d398326f99059ff775485246999027b3197955" target="_blank">Buy on PancakeSwap</a>
+            <a href="https://twitter.com/YOUR_TWITTER" target="_blank">Twitter</a>
+            <a href="https://t.me/YOUR_TELEGRAM" target="_blank">Telegram</a>
+        </div>
+
+        <p class="footer">
+            © 2024 FUSDC Token. All rights reserved.<br>
+            FUSDC is a community experimental token. Always do your own research.
+        </p>
+    </div>
+</body>
+</html>
